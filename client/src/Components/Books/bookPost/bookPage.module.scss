@@ -1,0 +1,93 @@
+$pix-width: 90px;
+$pix-height: 150px;
+$back-color: black;
+$tool-color: white;
+$link-color: blueviolet;
+
+.container {
+  display: flex;
+  transition: .5s ease;
+  width: 400px;
+
+  img {
+    width: $pix-width;
+    height: $pix-height;
+  }
+
+  label{
+    color: $back-color;
+    font-size: medium;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  div {
+    transform: none;
+  }
+
+  a{
+    color: $link-color;
+  }
+
+  //hover
+  &:hover  {
+    //transition: transform .5s ease;
+    transform: scale(1.05);
+  }
+  :hover img{
+    transform: none;
+  }
+  :hover div{
+    transform: none;
+  }
+  //wrap
+
+
+}
+
+//media
+@media (max-width: 860px) {
+  .container {
+    width: 300px;
+    img {
+      width: $pix-width*2/3;
+      height: $pix-height*2/3;
+    }
+  }
+}
+
+//other
+.bookName{
+  font-weight: bold;
+}
+
+.icon{
+  top: 5px;
+  margin-left: 1rem;
+  position: relative;
+  //position: absolute;
+  //margin-top: 10px;
+}
+
+.option{
+  .toolbar{
+    display: block;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    left: 30%;
+    border: 1px solid $back-color;
+    width: 6rem;
+    z-index: 40;
+    background-color: $tool-color;
+    //
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+  }
+
+  .icon:hover .toolbar {
+    transition: 1s;
+    opacity: 1;
+  }
+}
+

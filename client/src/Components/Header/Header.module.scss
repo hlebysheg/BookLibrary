@@ -1,0 +1,20 @@
+//links
+$link-color: black;
+//head
+$head-border: 1px solid silver;
+$head-col: white;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $head-border;
+  background: $head-col;
+
+  .link{
+    color: $link-color;
+    margin: 1rem;
+  }
+  div{
+    display: flex;
+  }
+}

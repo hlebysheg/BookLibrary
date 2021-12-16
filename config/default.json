@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://alex:123123ss@cluster0.vz5ql.mongodb.net/app?retryWrites=true&w=majority",
+  "jwt": "book lib"
+}

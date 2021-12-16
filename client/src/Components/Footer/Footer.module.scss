@@ -1,0 +1,15 @@
+$fot-color: white;
+$fot-font: black;
+$fot-bord: 1px solid silver;
+
+.footer{
+  display: flex;
+  padding-top: 1rem;
+  background-color: $fot-color;
+  color: $fot-font;
+  border-top: $fot-bord;
+  .link{
+    color: $fot-font;
+    margin: 1rem;
+  }
+}

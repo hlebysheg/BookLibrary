@@ -1,0 +1,80 @@
+$back-color: black;
+$tool-color: white;
+
+.container {
+  max-width: 1920px;
+  width: 70%;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  img {
+    width: 300px * 0.8;
+    height: 500px * 0.8;
+  }
+
+  a{
+    color: blueviolet;
+  }
+
+  .imgBar {
+    display: flex;
+  }
+
+  .infoText{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .icon{
+      top: 5px;
+      //margin-left: 1rem;
+      position: relative;
+    }
+  }
+}
+
+.option{
+
+  .toolbar{
+    display: block;
+    //font
+    font-size: 1rem;
+    text-align: center;
+    //opacity to transofrm
+    opacity: 0;
+    transition: 1s;
+    //set position
+    position: absolute;
+    left: 27%;
+    //border
+    border: 1px solid $back-color;
+    //character of box
+    width: 6rem;
+    height: 2rem;
+    z-index: 40;
+    background-color: $tool-color;
+  }
+
+  .icon:hover .toolbar{
+    transition: 1s;
+    //display: block;
+    opacity: 1;
+  }
+}
+
+.description {
+  padding-top: 1rem;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    width: 80%;
+
+    img {
+      width: 300px * 0.5;
+      height: 500px * 0.5;
+    }
+  }
+}

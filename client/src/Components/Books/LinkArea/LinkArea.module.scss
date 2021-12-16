@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  //max-width: 60%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  grid-column: auto;
+  a {
+    margin-right: 1rem;
+  }
+}

@@ -1,0 +1,15 @@
+$back-auth: white;
+$border-auth: none;
+
+.auth{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  max-width: 500px;
+  border: $border-auth;
+  background-color: $back-auth;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6rem;
+}
